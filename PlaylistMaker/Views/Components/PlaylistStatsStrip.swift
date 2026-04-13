@@ -9,34 +9,39 @@ struct PlaylistStatsStrip: View {
     let statistics: PlaylistStatistics
 
     var body: some View {
-        HStack(spacing: 16) {
-            statTile(
-                icon: "music.note.list",
-                title: "Songs",
-                value: "\(statistics.songCount)"
-            )
+        Group {
+            HStack(spacing: 16) {
+                statTile(
+                    icon: "music.note.list",
+                    title: "Songs",
+                    value: "\(statistics.songCount)"
+                )
 
-            Divider()
-                .frame(height: 36)
-                .overlay(PlaylistTheme.subtleBorder)
+                Divider()
+                    .frame(height: 36)
+                    .overlay(PlaylistTheme.subtleBorder)
 
-            statTile(
-                icon: "clock.fill",
-                title: "Total time",
-                value: statistics.totalDurationFormatted
+                statTile(
+                    icon: "clock.fill",
+                    title: "Total time",
+                    value: statistics.totalDurationFormatted
+                )
+            }
+            .padding(.vertical, 14)
+            .padding(.horizontal, 18)
+            .background(
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .stroke(PlaylistTheme.subtleBorder, lineWidth: 1)
+                    )
             )
         }
-        .padding(.vertical, 14)
-        .padding(.horizontal, 18)
-        .background(
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(.ultraThinMaterial)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .stroke(PlaylistTheme.subtleBorder, lineWidth: 1)
-                )
-        )
-        .accessibilityElement(children: .combine)
+        // One element for VoiceOver + UI tests: nested Text identifiers are unreliable inside List.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Playlist statistics")
+        .accessibilityValue(String(statistics.songCount))
         .accessibilityIdentifier("statsStrip")
     }
 

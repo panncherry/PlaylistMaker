@@ -42,6 +42,8 @@ struct PlaylistsRootView: View {
                         .font(.caption)
                 }
             }
+            // XCTest sees SwiftUI `List` as a `Table` (use `app.tables["playlistRoot"]`).
+            .accessibilityIdentifier("playlistRoot")
             .navigationTitle("Playlists")
             .navigationBarTitleDisplayMode(.large)
             .navigationDestination(for: UUID.self) { id in
@@ -86,7 +88,6 @@ struct PlaylistsRootView: View {
                 .presentationDetents([.medium])
             }
         }
-        .accessibilityIdentifier("playlistRoot")
     }
 
     private func formatDuration(_ pl: SavedPlaylist) -> String {
