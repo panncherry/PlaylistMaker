@@ -1,0 +1,86 @@
+[
+  {
+    "id": "A1000000-0000-4000-8000-000000000001",
+    "title": "Neon Skyline",
+    "artist": "Velvet Pulse",
+    "genre": "Synthwave",
+    "durationSeconds": 214
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000002",
+    "title": "Midnight Metro",
+    "artist": "City Echo",
+    "genre": "Electronic",
+    "durationSeconds": 198
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000003",
+    "title": "Golden Hour Drive",
+    "artist": "Harbor Lights",
+    "genre": "Indie Pop",
+    "durationSeconds": 203
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000004",
+    "title": "Paper Planes & Coffee",
+    "artist": "Soft Static",
+    "genre": "Acoustic",
+    "durationSeconds": 176
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000005",
+    "title": "Voltage Dreams",
+    "artist": "Nova Grid",
+    "genre": "House",
+    "durationSeconds": 245
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000006",
+    "title": "Rain on Rooftops",
+    "artist": "Loft Sessions",
+    "genre": "Lo-Fi",
+    "durationSeconds": 189
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000007",
+    "title": "Desert Compass",
+    "artist": "Dust & Echo",
+    "genre": "Americana",
+    "durationSeconds": 221
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000008",
+    "title": "Satellite Choir",
+    "artist": "Orbitals",
+    "genre": "Alternative",
+    "durationSeconds": 236
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000009",
+    "title": "Bloom Theory",
+    "artist": "Pastel Noise",
+    "genre": "Dream Pop",
+    "durationSeconds": 207
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000010",
+    "title": "Steel & Silk",
+    "artist": "Metro Saints",
+    "genre": "R&B",
+    "durationSeconds": 192
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000011",
+    "title": "Canyon Echoes",
+    "artist": "Redline Drifters",
+    "genre": "Rock",
+    "durationSeconds": 258
+  },
+  {
+    "id": "A1000000-0000-4000-8000-000000000012",
+    "title": "Velvet Algorithm",
+    "artist": "Glitch Poets",
+    "genre": "Hip-Hop",
+    "durationSeconds": 201
+  }
+]
